@@ -1,0 +1,86 @@
+.title{
+    color: khaki;
+    font-family: Dancing Script, Helvetica;
+    font-size: 550%; 
+}
+    
+header {
+    background-image: url(https://www.andre-media.it/wp-content/uploads/2014/10/supermercati1.jpg);
+    background-size: cover;
+    position: relative;
+    font-size: 85%;
+    color: black;
+    font-weight: bold;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:initial;
+    border-bottom: 2px groove black;
+
+}
+
+#username{
+    color: white;
+    position: relative;
+    margin: 20px 20px 0 0;
+    font-size: 20px;
+}
+
+.menu{
+    display: none;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+}
+  
+.button{
+    font-size: 50%;
+    justify-content: flex-end;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 10%;
+    margin: 15px;
+    background-color: khaki;
+    position: relative;
+    color:white;
+}
+
+.button a{
+    color:white;
+    background-color: khaki;
+    font-style:italic;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.button a:hover, .button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.title{
+    margin: 20px;
+}
+
+.wellcome{
+    height: 200px;
+    background-color: khaki;
+    padding: 10px;
+    padding-left: 20px;
+    color: black;
+    font-size: 130%;
+    font-weight: bold;
+}

@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+article {    
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: khaki;
+}
+
+/*---------  BODY  ---------*/
+
+.hide{
+    display: none;
+}
+
+.hideConferma{
+    display: none;
+}
+
+
+
+span{
+    display: flex;
+}
+
+#carrello{
+    margin-bottom: 0px;
+}
+
+.barra{
+    margin-top: 10px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding: 1%;
+    margin: 2%;
+    border-radius: 20px;
+    height: 350px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+img{
+    height: 55%;
+    margin-top:20px;
+}
+
+.box h1{
+    background-color: white;
+    color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0px;
+}
+
+.box h2{
+    color:black;
+    font-size: 20px;
+    margin: 0px; 
+    text-decoration: underline;
+}
+
+.box h2:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+
+.box p{
+    color:black;
+    font-size: 20px;
+    margin: 0px;    
+    font-style: italic;
+}
+
+section {
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 2%;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+h1{
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: khaki;
+}
+
+.aggiunto{
+    height: 240px;
+    max-width: 2000px;
+}
+
+h3{
+    margin: 0px;
+}
+
+#modalBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+#modalBox.hide{
+    display: none;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 80px 0 0 150px;
+    max-height: 100px;
+    margin-bottom: 0;
+}
+
+#modalRecensioni{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 80px 0 0 150px;
+}
+
+#addComment{
+    max-width: 500px;
+}
+
+#modalInfoProdotto{
+    flex-direction: column;
+    color: white;
+    max-height: 150px;
+
+}
+
+#modalImg{
+    margin: 0 25px 0 0;
+    width: 20%;
+    height: 100%;
+}
+
+#modalAcquista{
+    display: flex;
+    flex-direction: row;
+}
+
+div#modalAcquista button{
+    margin-right: 30px;
+}
+
+#modalRecensioni{
+    padding-top: 10px;
+}
+
+#modalRecensioni div{
+    margin-top: 10px;
+}
+
+#recensioni{
+    margin: 0px;    
+    overflow: hidden;
+}
+
+
+#boxContainerCommento{
+    background-color: khaki;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+#boxContainerCommento h4{
+    margin: 5px;
+}
+
+#textCommento{
+    display: flex;
+    flex-direction: column;
+}
+
+#textCommento button{
+    max-width: 60px;
+}
+
+/*----------  FOOTER  ----------*/
+
+
+footer{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    bottom: 0px;
+}
+
+footer strong{
+    font-size: 16px;
+    color:white;
+    margin: 5px;
+}
+
+footer a{
+    margin: 10px;
+}
+  
+@media (max-width: 500px) {
+    .box {
+        flex-shrink: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+      height: 20%;
+      font-size: 50%;
+      font-weight: 50%;
+      align-items: flex-end;      
+      justify-content: space-between;
+      padding: 5px;
+      align-content: stretch;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        display: none;
+  }
+ }
+
+@media(max-width: 500px){
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        background-color: white;
+        width: 20px;
+        height: 3px;
+        margin: 1px;
+        margin: 30 px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 3;
+  }
+  }
+
+@media(max-width: 500px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        font-size: 15%;
+        height: 150px;
+    }
+}
+
+@media(max-width: 500px){
+    body{
+        align-items: center;
+    }
+}
+@media(max-width: 500px){
+    div#list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

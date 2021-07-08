@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+article {    
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: khaki;
+}
+
+.title{
+    color: khaki;
+    font-family: Dancing Script, Helvetica;
+    font-size: 550%; 
+}
+    
+header {
+    background-image: url(https://www.andre-media.it/wp-content/uploads/2014/10/supermercati1.jpg);
+    background-size: cover;
+    position: relative;
+    font-size: 85%;
+    color: black;
+    font-weight: bold;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:initial;
+    border-bottom: 2px groove black;
+
+}
+
+.menu{
+    display: none;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+}
+  
+.button{
+    font-size: 50%;
+    justify-content: flex-end;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 10%;
+    margin: 15px;
+    background-color: khaki;
+    position: relative;
+    color:white;
+}
+
+.button a{
+    color:white;
+    background-color: khaki;
+    font-style:italic;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.button a:hover, .button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.title{
+    margin: 20px;
+}
+section {
+    padding-top: 20px;
+    flex-grow: 1;
+    background-color: khaki;
+    display: flex;
+    justify-content: space-around;
+}
+
+section div.box{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 3px solid white;
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 200%;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;    
+    justify-content: center;
+}
+
+.box a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 100%;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+section div a:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+div.box div{
+    align-items: center;
+    justify-content: center;
+}
+
+#box1{
+    background-image: url(https://ilfattoalimentare.it/wp-content/uploads/2019/07/pasta-trafilatura-al-bronzo-spaghetti-tagliatelle-conchiglie-farfalle-penne-AdobeStock_195612948-1024x768.jpeg);
+    background-size: cover;
+}
+
+#box2{
+    background-image: url(https://redacademy.it/wp-content/uploads/2017/06/selezione-carni.jpg);
+    background-size: cover;
+}
+
+#box3{
+    background-image: url(https://wips.plug.it/cips/buonissimo.org/cms/2013/05/adobestock_38825184.jpeg?w=713&a=c&h=407);
+    background-size: cover;
+}
+
+#box4{
+    background-image: url(https://uploads.nonsprecare.it/wp-content/uploads/2018/03/perche-mangiare-frutta-verdura-di-stagione.jpg);
+    background-size: cover;
+}
+
+#box5{
+    background-image: url(https://www.beverfood.com/wp-content/uploads/2019/10/sodas.jpg);
+    background-size: cover;
+}
+
+section.text{
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 0;
+}
+
+
+
+h1{
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+p{
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+footer{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    bottom: 0px;
+}
+
+footer strong{
+    font-size: 16px;
+    color:white;
+    margin: 5px;
+}
+
+footer a{
+    margin: 10px;
+}
+  
+
+
+@media (max-width: 500px) {
+    header {
+      height: 20%;
+      font-size: 50%;
+      font-weight: 50%;
+      align-items: flex-end;      
+      justify-content: space-between;
+      padding: 5px;
+    }
+}
+
+ @media (max-width: 500px) {
+    .button {
+        display: none;
+  }
+ }
+
+@media(max-width: 500px){
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+  @media (max-width: 500px) {
+    .menu {
+        display: flex;
+        background-color: white;
+        width: 20px;
+        height: 3px;
+        margin: 1px;
+        margin: 30 px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 3;
+  }
+  }
+
+  @media(max-width: 500px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        font-size: 15%;
+        height: 150px;
+    }
+}

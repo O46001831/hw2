@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+article {    
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: khaki;
+}
+
+
+/*---------  BODY  ---------*/
+
+.hide{
+    display: none;
+}
+
+span{
+    display: flex;
+}
+
+#carrello{
+    margin-bottom: 0px;
+}
+
+.barra{
+    margin-top: 10px;
+}
+
+
+.box{
+    padding: 0 1% 0 1%;
+    margin: 0 0 10px 20px;
+    border-radius: 20px;
+    height: 125px;
+    width: 65%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+img{
+    height: 90%;
+}
+
+.box h1{
+    background-color: white;
+    color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0px;
+}
+
+.box h2{
+    color:black;
+    font-size: 20px;
+    margin: 0px; 
+    text-decoration: underline;
+}
+
+.box h2:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+section {
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 2%;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: khaki;
+}
+
+h3{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.box h1{
+    margin-bottom: 5px;
+}
+
+div.box div{
+    margin: 0 30px 0 30px;
+}
+
+
+#contTotale{
+    display: flex;
+    flex-direction: column;
+}
+
+#confermaOrdine{
+    background-color: white;
+}
+
+#carrelloVuoto{
+    margin-left: 20px;
+    font-size: 150%;
+}
+
+#noOrdini{
+    margin-left: 20px;
+    font-size: large;
+}
+
+#list{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 5px 10px 10px 0;
+    padding: 15px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.prodottoBox{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+img{
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.prodottoBox h1{
+    margin: 0;
+}
+
+.generale{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+} 
+
+
+
+/*----------  FOOTER  ----------*/
+
+
+footer{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    bottom: 0px;
+}
+
+footer strong{
+    font-size: 16px;
+    color:white;
+    margin: 5px;
+}
+
+footer a{
+    margin: 10px;
+}
+  
+@media (max-width: 500px) {
+    .box {
+        flex-shrink: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+      height: 20%;
+      font-size: 50%;
+      font-weight: 50%;
+      align-items: flex-end;      
+      justify-content: space-between;
+      padding: 5px;
+      align-content: stretch;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        display: none;
+  }
+ }
+
+@media(max-width: 500px){
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        background-color: white;
+        width: 20px;
+        height: 3px;
+        margin: 1px;
+        margin: 30 px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 3;
+  }
+  }
+
+@media(max-width: 500px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        font-size: 15%;
+        height: 150px;
+    }
+}
+
+@media(max-width: 500px){
+    body{
+        align-items: center;
+    }
+}
+@media(max-width: 500px){
+    div#list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

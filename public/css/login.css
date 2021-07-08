@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+
+.title{
+    color: khaki;
+    font-family: Dancing Script, Helvetica;
+    font-size: 550%; 
+}
+    
+header {
+    background-image: url(https://www.andre-media.it/wp-content/uploads/2014/10/supermercati1.jpg);
+    background-size: cover;
+    position: relative;
+    font-size: 85%;
+    color: black;
+    font-weight: bold;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:initial;
+    border-bottom: 2px groove black;
+
+}
+
+.menu{
+    display: none;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+}
+  
+.button{
+    font-size: 50%;
+    justify-content: flex-end;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 10%;
+    margin: 15px;
+    background-color: khaki;
+    position: relative;
+    color:white;
+}
+
+.button a{
+    color:white;
+    background-color: khaki;
+    font-style:italic;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.button a:hover, .button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.title{
+    margin: 20px;
+}
+
+/*---------  BODY  ---------*/
+article{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: khaki;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+input{
+    margin-left: 1em;
+}
+
+h3{
+    margin-left: 20px;
+    color: red;
+    align-items: center;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+/*----------  FOOTER  ----------*/
+
+
+footer{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    bottom: 0px;
+}
+
+footer strong{
+    font-size: 16px;
+    color:white;
+    margin: 5px;
+}
+
+footer a{
+    margin: 10px;
+}
+  
+@media (max-width: 500px) {
+    .box {
+        flex-shrink: 0;
+        padding: 10px;
+    }
+}
+@media (max-width: 500px){
+    article{
+        width: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100vh;
+        height: 20%;
+        font-size: 50%;
+        font-weight: 50%;
+        align-items: flex-end;      
+        justify-content: space-between;
+        padding: 5px;
+        align-content: stretch;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        display: none;
+  }
+ }
+
+@media(max-width: 500px){
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        background-color: white;
+        width: 20px;
+        height: 3px;
+        margin: 1px;
+        margin: 30 px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 3;
+  }
+  }
+
+@media(max-width: 500px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        font-size: 15%;
+        height: 150px;
+        width: 100vh;
+    }
+}
+
+@media(max-width: 500px){
+    body{
+        align-items: center;
+    }
+}
+@media(max-width: 500px){
+    div#list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
